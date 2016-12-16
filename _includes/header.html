@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/icons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/icons/manifest.json">
+  <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/icons/favicon.ico">
+  <meta name="msapplication-config" content="/icons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <meta charset="UTF-8">
+  <meta name="description" content="Audio mastering by Christopher Leary">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Melograf Mastering | {{ page.title }}</title>
+  {% seo title=false %}
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40459444-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+<body>
+  <header>
+    <a href="{{ site.baseurl }}/" id="pageTitle">Melograf</a>
+    <a href="{{ site.baseurl }}/" id="pageSubtitle">Masterin<span id="lastLetter">g</span></a>
+  </header>
+  <div class="hline"></div>
+  <nav>
+    <a href="{{ site.baseurl }}/process/" {% if page.title == "Process" %}id="current"{% endif %}>Process</a>
+    <a href="{{ site.baseurl }}/faq/" {% if page.title == "FAQ" %}id="current"{% endif %}>FAQ</a>
+    <a href="{{ site.baseurl }}/about/" {% if page.title == "About" %}id="current"{% endif %}>About</a>
+    <a href="{{ site.baseurl }}/contact/" {% if page.title == "Contact" %}id="current"{% endif %}>Contact</a>
+  </nav>

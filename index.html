@@ -1,0 +1,46 @@
+---
+layout: page
+title: Home
+---
+<section>
+  <h1>Welcome to Melograf</h1>
+  <p>
+    Created for the emergent class of DIY musicians and indie labels, Melograf provides the means to give every release the final sheen, balance and punch needed to sound its best, at indie-friendly prices.
+  </p>
+  <h1>Hybrid Mastering</h1>
+  <p>
+    With rates from as little as &pound;20 per track, there's no reason why your next release can't be given an extra polish. As an unattended mastering service with online file transfers, it doesn't matter where you're working from&mdash;your music can benefit from an objective ear, along with world-class analogue outboard equipment and digital processing.
+  </p>
+  <img srcset="{{ base.url }}/assets/api_sm.jpg 760w,
+  {{ base.url }}/assets/api.jpg 1520w"
+  sizes="100vw"
+  src="{{ base.url }}/assets/api_sm.jpg"
+  alt="">
+  <h1>Rates</h1>
+  <p>
+    I work to a scaled system, depending on the number of tracks to be mastered. It is more cost-effective to have multiple tracks mastered in a single session, than to have single tracks mastered periodically.
+  </p>
+  <ul>
+    <li>Single track: &pound;30 GBP</li>
+    <li>2&ndash;4 tracks: &pound;25 per track</li>
+    <li>5+ tracks: &pound;20 per track</li>
+    <li>Extra versions/edits/instrumentals are mastered at a reduced rate of &pound;10 per track (when included with original track)</li>
+    <li>An optional &pound;20 charged for a DDP image or an error-checked Red Book audio CDR (inc. P&amp;P; &pound;10 per additional copy)</li>
+  </ul>
+  <p>
+    Accepted methods of payment are credit/debit card (via PayPal), cheque and cash. You will receive a pdf invoice via email, detailing how to conveniently and quickly pay before receiving your masters.
+  </p>
+  <h1>Quick Quote</h1>
+  <div id="quote">
+    <form>
+      <label>Number of tracks to be mastered:</label>
+      <input type="number" min="0" id="numTracks" size="3" placeholder="0"><br>
+      <label>Number of extra versions (instrumentals, radio/alt. mixes etc.):</label>
+      <input type="number" min="0" id="extras" size="3" placeholder="0"><br>
+      <label for="ddp">DDP image or CDR required?:</label> <input type="checkbox" id="ddp">
+    </form>
+    <button onclick="quote()">Update quote</button>
+    <p id="results"></p>
+    <p><a href="process">Read on</a> to learn how to prepare and upload your music for mastering. Once you are ready, please <a href="contact">get in touch</a>.</p>
+  </div>
+</section>
