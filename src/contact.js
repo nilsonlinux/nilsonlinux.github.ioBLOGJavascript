@@ -6,7 +6,7 @@ $contactForm.submit(function(e) {
   var defaultSubmitText = $submit.val();
 
   $.ajax({
-    url: "//formspree.io/mail@melograf.com",
+    url: "//formspree.io/" + "mail" + "@" + "melograf" + "." + "com",
     method: "POST",
     data: $(this).serialize(),
     dataType: "json",
