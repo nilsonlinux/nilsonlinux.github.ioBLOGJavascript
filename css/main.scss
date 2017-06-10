@@ -40,9 +40,10 @@ a:visited {
   text-decoration: none;
 }
 
-abbr {
+abbr[title], acronym[title] {
   border-bottom: 1px dashed #eee;
   cursor: help;
+  text-decoration: none;
 }
 
 body {

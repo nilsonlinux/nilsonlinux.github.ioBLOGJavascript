@@ -18,7 +18,8 @@
             that.prev().toggleClass( settings.shineClass );
           }, that.index() * settings.speed );
         });
-      }
+      };
+      
       if ( ! $(this).hasClass( 'shineApplied' ) ){
         $(this).addClass( 'shineApplied' ).html('');
         for( i=0; i<text.length; i++ ) {
@@ -34,7 +35,7 @@
         }
 
     });
-  }
+  };
 })(jQuery, window);
 
 $(document).ready(function() {
