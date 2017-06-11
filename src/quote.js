@@ -16,12 +16,12 @@ function quote() {
   }
 
   // Check if client has added extras without first adding track for mastering.
-  if (numTracks == 0) {
-    if (extras != 0 && ddp == 0) {
+  if (numTracks === '0') {
+    if (extras !== '0' && ddp === false) {
       document.getElementById("results").innerHTML = "Please add at least one track before adding extras.";
       $('#results')
       .css("color", "red");
-    } else if (extras == 0 && ddp != 0) {
+    } else if (extras === '0' && ddp === true) {
       document.getElementById("results").innerHTML = "Please add at least one track before adding a DDPi/CDR.";
       $('#results')
       .css("color", "red");
@@ -33,6 +33,7 @@ function quote() {
   } else {
     document.getElementById("results").innerHTML = "Total cost will be: &pound;" + (price + (extras * 10) + (ddp * 20)); // Add up the total cost.
     $('#results')
+      .stop(true, true)
       .effect("highlight", {color: "#00ffff"})
       .css("color", "#00ffff")
       .animate({color: "#fff"}, {queue: false, duration: 500});

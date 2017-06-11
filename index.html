@@ -34,18 +34,16 @@ title: Home
   <div id="quote">
     <form>
       <label>Number of tracks to be mastered:</label>
-      <input type="number" min="0" id="numTracks" size="3" placeholder="0"><br>
+      <input type="number" min="0" id="numTracks" size="3" value="0" onchange="quote()"><br>
       <label>Number of extra versions (instrumentals, radio/alt. mixes etc.):</label>
-      <input type="number" min="0" id="extras" size="3" placeholder="0"><br>
-      <label for="ddp"><abbr title="Disc Description Protocol&mdash;a format used by manufacturers for CD replication, supplied as a zip file download. More robust than a physical CD master.">DDP</abbr> image or CDR required?:</label><input type="checkbox" id="ddp">
+      <input type="number" min="0" id="extras" size="3" value="0" onchange="quote()"><br>
+      <label for="ddp"><abbr title="Disc Description Protocol&mdash;a format used by manufacturers for CD replication, supplied as a zip file download. More robust than a physical CD master.">DDP</abbr> image or CDR required?:</label>
+      <input type="checkbox" id="ddp" onchange="quote()">
     </form>
     <button onclick="quote()">Update quote</button>
     <p id="results"></p>
     <p>
-      <a href="process">Read on</a> to learn how to prepare and upload your music for mastering.
-    </p>
-    <p>
-      Ready to get started? Please <a href="contact">get in touch</a>.
+      <a href="process">Read on</a> to learn how to prepare your music. Ready to get started? Please <a href="contact">get in touch</a>.
     </p>
   </div>
 </section>
