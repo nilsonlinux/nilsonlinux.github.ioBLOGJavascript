@@ -10,7 +10,7 @@ function quote() {
   } else if (numTracks > 1 && numTracks <= 4) {
     price = 40 + ((numTracks - 1) * 30);
   } else if (numTracks > 4) {
-    price = 145 + ((numTracks - 4) * 25);
+    price = 130 + ((numTracks - 4) * 25);
   } else {
     price = 0;
   }
@@ -20,14 +20,17 @@ function quote() {
     if (extras !== '0' && ddp === false) {
       document.getElementById("results").innerHTML = "Please add at least one track before adding extras.";
       $('#results')
+      .stop(true, true)
       .css("color", "red");
     } else if (extras === '0' && ddp === true) {
       document.getElementById("results").innerHTML = "Please add at least one track before adding a DDPi/CDR.";
       $('#results')
+      .stop(true, true)
       .css("color", "red");
     } else {
       document.getElementById("results").innerHTML = "Please add at least one track.";
       $('#results')
+      .stop(true, true)
       .css("color", "red");
     }
   } else {
