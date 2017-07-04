@@ -42,7 +42,7 @@ sass:
 
 markdown: kramdown
 
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-autoprefixer
