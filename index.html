@@ -30,14 +30,14 @@ title: Home
   <p>
     Accepted methods of payment are credit/debit card (via PayPal) and bank transfer. You will receive a pdf invoice via email, detailing how to conveniently and quickly pay before receiving your masters.
   </p>
-  <h1>Quick Quote</h1>
   <div id="quote">
+  <h1>Quick Quote</h1>
     <form>
       <label>Number of tracks to be mastered:</label>
       <input type="number" min="0" id="numTracks" size="3" value="0" onchange="quote()"><br>
       <label>Number of extra versions (instrumentals, radio/alt. mixes etc.):</label>
       <input type="number" min="0" id="extras" size="3" value="0" onchange="quote()"><br>
-      <label for="ddp"><abbr title="Disc Description Protocol&mdash;a format used by manufacturers for CD replication, supplied as a zip file download. More robust than a physical CD master.">DDP</abbr> image or CDR required?:</label>
+      <label for="ddp"><abbr title="Disc Description Protocol&mdash;a format used by manufacturers for CD replication, supplied as a zip file download. More robust than a physical CD master.">DDP</abbr> image or CDR required:</label>
       <input type="checkbox" id="ddp" onchange="quote()">
     </form>
     <button onclick="quote()">Update quote</button>

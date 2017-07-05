@@ -1,5 +1,5 @@
-(function( $, window, undefined ){
-  $.fn.shineText = function( options ) {
+(function($, window, undefined){
+  $.fn.shineText = function(options) {
 
     // DEFAULT SETTINGS
     var settings = $.extend({
@@ -19,27 +19,26 @@
           }, that.index() * settings.speed );
         });
       };
-      
-      if ( ! $(this).hasClass( 'shineApplied' ) ){
-        $(this).addClass( 'shineApplied' ).html('');
-        for( i=0; i<text.length; i++ ) {
-          $(this).append( '<span>'+text[i]+'</span>' );
-        }
-          $(this).append( '<span></span>' );
-        }
-        doAnimate( $(this) );
 
-        // ON COMPLETE:
-        if ( $.isFunction( settings.complete ) ) {
-          settings.complete.call( this );
+      if (!$(this).hasClass('shineApplied')) {
+        $(this).addClass('shineApplied').html('');
+        for( i = 0; i < text.length; i++ ) {
+          $(this).append( '<span>' + text[i] + '</span>' );
         }
+        $(this).append( '<span></span>' );
+      }
+      doAnimate( $(this) );
 
+      // ON COMPLETE:
+      if ($.isFunction(settings.complete)) {
+        settings.complete.call(this);
+      }
     });
   };
 })(jQuery, window);
 
 $(document).ready(function() {
-  setInterval(function(){
+  setInterval(function() {
     $("#pageTitle").shineText();
   }, 10000);
 });

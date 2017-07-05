@@ -17,6 +17,8 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -57,22 +59,21 @@ body {
 
 h1 {
   color: #0ff;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 600;
-  margin: 0;
-  padding-top: 1em;
+  margin-bottom: 1rem;
   text-shadow: 0 0 10px #0ff;
 }
 
 p {
-  font-size: 1em;
-  margin: 1em 0;
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 header {
   color: #0ff;
   font-family: 'Voltaire', sans-serif;
-  padding: 20px;
+  padding: 1.25rem;
   text-align: center;
   text-transform: uppercase;
   text-shadow: 0 0 10px #0ff;
@@ -85,19 +86,17 @@ a#pageSubtitle {
 
 #pageTitle {
   display: block;
-  font-size: 12em;
-  height: 0.9em;
-  line-height: 0.5em;
-  margin: 0.5em 0 0 0;
-  padding: 0;
+  font-size: 12rem;
+  margin-bottom: 1.25rem;
 }
 
 #pageSubtitle {
   display: block;
-  font-size: 2.4em;
-  letter-spacing: 1.7em;
-  margin: -1em 0 0 0;
-  padding: 0;
+  font-size: 2.4rem;
+  letter-spacing: 4.1rem;
+  margin-bottom: -3rem;
+  position: relative;
+  top: -3rem;
 }
 
 #lastLetter {
@@ -110,17 +109,22 @@ a#pageSubtitle {
 }
 
 nav {
-  padding: 20px;
-  font-size: 1.3em;
+  background: rgba(26, 26, 26, 0.9);
+  font-size: 1.3rem;
   font-weight: 600;
+  margin: 10px 0;
+  padding: 10px 1.25rem;
+  position: sticky;
   text-align: center;
   text-transform: uppercase;
+  top: 0;
+  z-index: 999;
 }
 
 nav a {
   color: #eee;
   padding: 5px 10px;
-  transition: .5s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 nav a:hover {
@@ -139,7 +143,7 @@ nav a#current {
 }
 
 section {
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 section a:link,
@@ -151,8 +155,12 @@ section a:hover {
   border-bottom: 2px solid #0ff;
 }
 
+ul {
+  margin-left: 2rem;
+}
+
 li {
-  padding-bottom: 0.5em;
+  margin-bottom: 1rem;
 }
 
 li a:link {
@@ -160,19 +168,15 @@ li a:link {
 }
 
 p.discog {
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
   column-count: 3;
-  -webkit-column-gap: 2em;
-  -moz-column-gap: 2em;
-  column-gap: 2em;
+  column-gap: 2rem;
 }
 
 footer {
   clear: both;
   color: #999;
-  font-size: 1em;
-  padding: 20px;
+  font-size: 1rem;
+  padding: 1.25rem;
   text-align: center;
 }
 
@@ -180,23 +184,22 @@ footer {
   clear: both;
   border-bottom: 2px solid #2d2d2d;
   height: 1px;
-  margin: 0 auto;
+  margin: 0 2.5rem;
   min-height: 1px;
-  width: 85%;
 }
 
 form {
-  margin-top: 3em;
+  margin-top: 3rem;
 }
 
 form input {
   background: #eee;
   border: 0;
   color: #000;
-  font-size: 1em;
+  font-size: 1rem;
   display: block;
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: .5rem;
+  margin-bottom: 1rem;
   width: 50%;
 }
 
@@ -205,8 +208,9 @@ form textarea {
   border: 0;
   color: #000;
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding: .5rem;
   width: 100%;
 }
 
@@ -221,8 +225,9 @@ form .send {
   cursor: pointer;
   float: right;
   font-weight: 600;
-  margin-top: 20px;
-  width: 33%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  width: 12rem;
   transition: color 0.5s, background 0.5s;
 }
 
@@ -250,38 +255,38 @@ form .send:focus {
   clear: both;
   color: #008000;
   background: #90ee90;
-  margin-top: 3em;
-  padding: 10px;
+  margin-bottom: 1rem;
+  padding: 1rem;
 }
 
 .error {
   clear: both;
   color: #f00;
   background: #ffc0cb;
-  margin-top: 3em;
+  margin-bottom: 1rem;
   padding: 10px;
 }
 
 img {
   height: auto;
-  margin: 50px 0 20px;
+  margin: 2rem 0 1.25rem;
   max-width: 100%;
 }
 
 footer .social {
   display: block;
-  padding: 1em;
+  padding: 1rem;
 }
 
 footer .social a.facebook,
 footer .social a.twitter {
-  border-radius: 1em;
+  border-radius: 1rem;
   box-sizing: border-box;
   display: inline-block;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  height: 2em;
-  width: 2em;
+  height: 2rem;
+  width: 2rem;
 }
 
 footer .social a.facebook:hover,
@@ -293,27 +298,28 @@ footer .social a.twitter:hover {
 
 footer .social a.facebook {
   background: #49629d url({{ base.url }}/assets/facebook.svg) no-repeat center;
-  background-size: 1em;
-  margin-right: 1em;
+  background-size: 1rem;
+  margin-right: 1rem;
 }
 
 footer .social a.twitter {
   background: #6aa9e0 url({{ base.url }}/assets/twitter.svg) no-repeat center;
-  background-size: 1em;
-}
-
-#quote {
-  font-size: 1em;
+  background-size: 1rem;
 }
 
 #quote form {
-  margin: 1em 2em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 1.25rem;
+  margin: 1rem 0;
 }
 
 #quote form label {
   display: inline-block;
-  padding-right: 2em;
-  width: 50%;
+  margin-bottom: 1rem;
+  padding-right: 2rem;
+  width: 75%;
 }
 
 #quote form input {
@@ -321,9 +327,8 @@ footer .social a.twitter {
   border: 0;
   color: #000;
   display: inline;
-  padding: 5px;
-  margin: 10px;
-  width: 3em;
+  padding: .5rem;
+  width: 3rem;
 }
 
 #quote form input:focus {
@@ -331,8 +336,8 @@ footer .social a.twitter {
 }
 
 #quote form input#ddp {
-  height: 1em;
-  width: 1em;
+  height: 1rem;
+  width: 1rem;
 }
 
 #quote button {
@@ -340,11 +345,12 @@ footer .social a.twitter {
   border: 2px solid #fff;
   color: #fff;
   cursor: pointer;
-  font-size: 1em;
+  display: block;
+  font-size: 1rem;
   font-weight: 600;
-  margin: 1em 2em;
-  padding: 10px;
-  width: 200px;
+  margin: 0 1.25rem 1rem;
+  padding: 1rem;
+  width: 12rem;
   transition: color 0.5s, background 0.5s;
 }
 
@@ -363,9 +369,9 @@ footer .social a.twitter {
 }
 
 #results {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-weight: 600;
-  padding: 10px;
+  padding: .5rem;
   text-align: center;
 }
 
@@ -390,122 +396,102 @@ footer .social a.twitter {
   background: #90ee90;
 }
 
-/* Media Queries */
-
 @media (max-width: 800px) {
   #pageTitle {
-    font-size: 22vw;
+    font-size: 24vw;
+    margin-bottom: 2.5rem;
   }
 
   #pageSubtitle {
-    font-size: 9vw;
-    letter-spacing: 0.6em;
-    margin: -0.5em 0 0 0;
+    font-size: 5.5vw;
+    letter-spacing: 8vw;
+  }
+
+  nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0;
     padding: 0;
   }
+
   nav a {
-    display: inline-block;
+    padding: .5rem 1rem;
+    margin: .5rem 0;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
+  nav {
+    font-size: 1rem;
+  }
+
   p.discog {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
     column-count: 2;
   }
 }
 
 @media (max-width: 400px) {
   header {
-    padding:10px;
+    padding:1rem;
   }
 
   nav {
-    padding: 10px;
+    justify-content: space-between;
   }
 
-  section {
-    padding: 10px;
+  .hline {
+    margin: 0 2.5rem;
   }
 
   p.discog {
-    -webkit-column-gap: 1em;
-    -moz-column-gap: 1em;
-    column-gap: 1em;
+    column-gap: 1rem;
   }
 
   footer {
-    padding: 10px;
+    padding: 1rem;
   }
 
   form {
-    margin-top: 2em;
+    margin-top: 2rem;
   }
 
   form input {
-    margin-bottom: 20px;
     width: 100%;
   }
 
-  form .send {
+  #quote form {
+    padding: 0;
+  }
+
+  form .send,
+  #quote button {
     float: none;
-    margin: 20px auto;
+    margin: 0 auto 1rem;
     width: 100%;
-  }
-
-  .success {
-    margin-top: 2em;
-  }
-
-  .error {
-    margin-top: 2em;
   }
 
   footer .social {
-    padding: 2em;
+    padding: 2rem;
   }
 
   footer .social a.facebook,
   footer .social a.twitter {
-    border-radius: 2em;
-    height: 4em;
-    width: 4em;
+    border-radius: 2rem;
+    height: 4rem;
+    width: 4rem;
   }
 
   footer .social a.facebook {
-    background-size: 2em;
-    margin-right: 2em;
+    background-size: 2rem;
+    margin-right: 2rem;
   }
 
   footer .social a.twitter {
-    background-size: 2em;
+    background-size: 2rem;
   }
 
   form textarea {
-    height: 12em;
-  }
-
-  #quote form {
-    margin : 1em 0;
-  }
-
-  #quote form input {
-    margin: 1em;
-  }
-
-  #quote form input#ddp {
-    height: 2em;
-    width: 2em;
-  }
-
-  #quote form label {
-    width: 75%;
-    padding-right: 0;
-  }
-
-  #quote button {
-    margin: 1em 0;
-    width: 100%;
+    height: 12rem;
   }
 }
