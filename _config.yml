@@ -1,10 +1,10 @@
-title: Melograf Mastering
-email: mail@melograf.com
-description: Audio mastering by Christopher Leary.
+title: Nilsonlinux
+email: nilsonlinux@gmail.com
+description: Web Master Blog.
 baseurl: ""
-url: "http://melograf.com"
+url: "https://nilsonlinux.github.io"
 twitter:
-  username: ochremusic
+  username: Nilsonlinux
 facebook:
   app_id:
   publisher: 190149549210
@@ -13,8 +13,8 @@ facebook:
 social:
   name: Melograf Mastering
   links:
-    - https://twitter.com/ochremusic
-    - https://www.facebook.com/melograf
+    - https://twitter.com/Nilsonlinux
+    - https://www.facebook.com/Nilsonlinux
 
 # Build settings
 
